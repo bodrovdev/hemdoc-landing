@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="theme-color" content="#29B7C1">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link href="./css/style.min.css" rel="stylesheet">
+
+	<title>Доктор Лобанова - консультации гематолога</title>
+</head>
+
+<body>
+	<div class="body-container">
+		<header class="page-header">
+  <section class="headline">
+    <div class="headline__container base-container">
+      <a href="index.html">
+        <figure class="headline__logo-block logo-block base-figure">
+          <picture>
+            <source srcset="img/image/content/logo.svg" media="(min-width: 1024px)">
+            <img srcset="img/image/content/logo-mobile.svg" class="headline__logo-img" alt="Логотип">
+          </picture>
+        </figure>
+      </a>
+      <div class="headline__link-block">
+        <div class="headline__newLinks">
+          <a class="newHeading__socials-link newHeading__wa-link base-link" href="" target="_blank" rel="noreffer">
+            <img class="newHeading__link-icon" src="img/image/wa-icon.svg" width="44" height="44" alt="#">
+          </a>
+          <a class="newHeading__socials-link newHeading__tg-link base-link" href="" target="_blank" rel="noreffer">
+            <img class="newHeading__link-icon" src="img/image/tg-icon.svg" width="44" height="44" alt="#">
+          </a>
+        </div>
+        <a class="headline__order-link order-link base-link" href="form.html#appointment-block" id="head-order">
+          <span class="order-link__caption">Консультация онлайн</span>
+        </a>
+        <a class="headline__whatsup-link whatsup-link base-link" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener noreferrer" id="head-whatsup">
+          <svg class="whatsup-link__icon" width="19" height="19">
+            <use href="img/icon/sprite.svg#whatsup-icon"></use>
+          </svg>
+          <span class="whatsup-link__caption">Перейти в WhatsApp</span>
+        </a>
+      </div>
+      <button class="headline__burger" id="burger">
+        <span class="headline__burger-line"></span>
+        <span class="headline__burger-line"></span>
+        <span class="headline__burger-line"></span>
+      </button>
+    </div>
+  </section>
+  <nav class="main-nav" id="main-nav">
+    <div class="main-nav__container base-container">
+      <ul class="main-nav__list base-list">
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link main-nav__link base-link" href="#about-block">О враче</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link main-nav__link base-link" href="#required-block">Как получить консультацию</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link main-nav__link base-link" href="#diplomas-block">Дипломы и сертификаты</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link main-nav__link base-link" href="#faq-block">Вопросы и ответы</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link main-nav__link base-link" href="#reviews-block">Отзывы пациентов</a>
+        </li>
+        <li class="main-nav__list-item main-nav__order-item">
+          <a class="main-nav__order-link main-nav__link base-link" href="form.html#appointment-block">Консультация онлайн</a>
+        </li>
+        <li class="main-nav__list-item main-nav__whatsup-item">
+          <a class="main-nav__whatsup-link main-nav__link base-link" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener noreferrer">Перейти в WhatsApp</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- <section class="heading">
+    <div class="heading__top">
+      <div class="heading__top-container base-container">
+        <h1 class="heading__title base-title">
+          Консультация<br><span class="heading__title-highlight">врача гематолога</span>
+        </h1>
+        <div class="heading__top-info">
+          <span class="heading__name">Лобанова Татьяна Игоревна</span>
+          <span class="heading__profession">Кандидат медицинских наук</span>
+        </div>
+      </div>
+    </div>
+    <div class="heading__bottom">
+      <div class="heading__bottom-container base-container">
+        <ul class="heading__bottom-list base-list">
+          <li class="heading__list-item">Вам никуда не нужно ехать или идти</li>
+          <li class="heading__list-item">Высококвалифицированный врач</li>
+          <li class="heading__list-item">Быстрое получение результата и назначения</li>
+        </ul>
+        <div class="heading__bottom-info">
+          <div class="heading__order-wrapper">
+            <a class="heading__order-link order-link base-link" href="#appointment-block">
+              <span class="order-link__caption">Записаться на консультацию
+            </a>
+          </div>
+          <span class="heading__bottom-description">
+            Консультации ведутся в онлайн<br>
+            форме по воскресеньям по<br>
+            WhatsApp
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="heading__image-block">
+      <div class="heading__image-inner">
+        <figure class="heading__photo-image base-figure">
+          <picture>
+            <source srcset="img/image/content/heading-photo.webp 1x, img/image/content/X2-heading-photo.webp 2x"
+              type="image/webp">
+            <img srcset="img/image/content/heading-photo.png 1x, img/image/content/X2-heading-photo.png 2x"
+              class="heading__photo-img" alt="Фото врача">
+          </picture>
+        </figure>
+        <figure class="heading__graphic base-figure">
+          <img class="heading__graphic-img" src="img/image/design/heading-graphic.svg" alt="">
+        </figure>
+        <span class="heading__whatsup-ball whatsup-ball base-link" id="whatsup-ball">
+          <span class="whatsup-ball__inner">
+            <svg class="whatsup-ball__icon" width="23" height="22">
+              <use href="img/icon/sprite.svg#whatsup-icon"></use>
+            </svg>
+          </span>
+        </span>
+        <div class="heading__experience" id="experience-block">
+          <div class="heading__experience-headline">
+            <span class="heading__experience-title">9+ лет</span>
+            <picture>
+              <img srcset="img/image/design/heading-fat-love.png 1x, img/image/design/X2-heading-fat-love.png 2x"
+                class="heading__experience-img" alt="Изображение сердечка">
+            </picture>
+          </div>
+          <span class="heading__experience-info">Стаж врача гематолога</span>
+        </div>
+        <div class="heading__patients" id='patients-block'>
+          <div class="heading__patients-inner">
+            <img class="heading__patients-love" src="img/image/design/heading-love.svg" width="47" height="47" alt="">
+            <picture>
+              <img srcset="img/image/design/heading-patients.png 1x, img/image/design/X2-heading-patients.png 2x"
+                class="heading__patients-img" alt="Фотографии счастливых пациентов">
+            </picture>
+            <span class="heading__patients-title">10 000+</span>
+            <span class="heading__patients-info">Счастливых пациентов</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+</header>
+		<main class="page-content">
+
+  <section class="newHeading">
+    <div class="newHeading__container base-container">
+      <div class="newHeading__main">
+        <div class="newHeading__info">
+          <h1 class="newHeading__title base-title">Консультация врача гематолога</h1>
+          <p class="newHeading__text base-par">Запишитесь прямо сейчас и получите скидку 15% на все услуги</p>
+          <div class="newHeading__bottom">
+            <a class="newHeading__button-link base-link">Записаться</a>
+            <a class="newHeading__socials-link newHeading__wa-link base-link" href="" target="_blank" rel="noreffer">
+              <img class="newHeading__link-icon" src="img/image/wa-icon.svg" width="44" height="44" alt="#">
+            </a>
+            <a class="newHeading__socials-link newHeading__tg-link base-link" href="" target="_blank" rel="noreffer">
+              <img class="newHeading__link-icon" src="img/image/tg-icon.svg" width="44" height="44" alt="#">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="newHeading__features">
+        <div class="newHeading__feature">
+          <span class="newHeading__feature-title">9+ лет</span>
+          <img class="newHeading__feature-icon" src="img/image/heart-icon.png" width="42" height="36" alt="#">
+          <p class="newHeading__feature-text base-par">Стаж врача гематолога</p>
+        </div>
+        <div class="newHeading__feature">
+          <span class="newHeading__feature-title">10 000</span>
+          <img class="newHeading__feature-icon" src="img/image/heart-icon.png" width="42" height="36" alt="#">
+          <p class="newHeading__feature-text base-par">Счастливых пациентов</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="newHeading__mobile-container base-container">
+      <div class="newHeading__features newHeading__features--mobile">
+        <div class="newHeading__feature">
+          <span class="newHeading__feature-title">9+ лет</span>
+          <img class="newHeading__feature-icon" src="img/image/heart-icon.png" width="42" height="36" alt="#">
+          <p class="newHeading__feature-text base-par">Стаж врача гематолога</p>
+        </div>
+        <div class="newHeading__feature">
+          <span class="newHeading__feature-title">10 000</span>
+          <img class="newHeading__feature-icon" src="img/image/heart-icon.png" width="42" height="36" alt="#">
+          <p class="newHeading__feature-text base-par">Счастливых пациентов</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="diplomas" id="diplomas-block">
+    <div class="diplomas__container base-container">
+      <h2 class="diplomas__title section-title__slider-block base-title">Дипломы и сертификаты</h2>
+      <div class="diplomas__slider-container">
+        <div class="diplomas__slider swiper">
+          <div class="diplomas__slider-inner swiper-wrapper">
+            <div class="diplomas__slider-item swiper-slide">
+              <a href="img/image/content/diplomas-item-1.jpg" class="glightbox" zoomable: true>
+                <figure class="diplomas__item-image base-figure">
+                  <img class="diplomas__item-img" src="img/image/content/diplomas-item-1.jpg" alt="">
+                </figure>
+              </a>
+            </div>
+            <div class="diplomas__slider-item swiper-slide">
+              <a href="img/image/content/diplomas-item-2.jpg" class="glightbox" zoomable: true>
+                <figure class="diplomas__item-image base-figure">
+                  <img class="diplomas__item-img" src="img/image/content/diplomas-item-2.jpg" alt="">
+                </figure>
+              </a>
+            </div>
+            <div class="diplomas__slider-item swiper-slide">
+              <a href="img/image/content/diplomas-item-3.jpg" class="glightbox" zoomable: true>
+                <figure class="diplomas__item-image base-figure">
+                  <img class="diplomas__item-img" src="img/image/content/diplomas-item-3.jpg" alt="">
+                </figure>
+              </a>
+            </div>
+            <div class="diplomas__slider-item swiper-slide">
+              <a href="img/image/content/diplomas-item-4.jpg" class="glightbox" zoomable: true>
+                <figure class="diplomas__item-image base-figure">
+                  <img class="diplomas__item-img" src="img/image/content/diplomas-item-4.jpg" alt="">
+                </figure>
+              </a>
+            </div>
+            <div class="diplomas__slider-item swiper-slide">
+              <a href="img/image/content/diplomas-item-5.jpg" class="glightbox" zoomable: true>
+                <figure class="diplomas__item-image base-figure">
+                  <img class="diplomas__item-img" src="img/image/content/diplomas-item-5.jpg" alt="">
+                </figure>
+              </a>
+            </div>
+            <div class="diplomas__slider-item swiper-slide">
+              <a href="img/image/content/diplomas-item-6.jpg" class="glightbox" zoomable: true>
+                <figure class="diplomas__item-image base-figure">
+                  <img class="diplomas__item-img" src="img/image/content/diplomas-item-6.jpg" alt="">
+                </figure>
+              </a>
+            </div>
+            <div class="diplomas__slider-item swiper-slide">
+              <a href="img/image/content/diplomas-item-7.jpg" class="glightbox" zoomable: true>
+                <figure class="diplomas__item-image base-figure">
+                  <img class="diplomas__item-img" src="img/image/content/diplomas-item-7.jpg" alt="">
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="diplomas__slider-pagination swiper-pagination"></div>
+        <div class="diplomas__slider-button diplomas__slider-button--prev swiper-button-prev">
+          <svg class="diplomas__slider-icon slider-icon" width="11" height="17">
+            <use href="img/icon/sprite.svg#arrow-icon"></use>
+          </svg>
+        </div>
+        <div class="diplomas__slider-button diplomas__slider-button--next swiper-button-next">
+          <svg class="diplomas__slider-icon slider-icon" width="11" height="17">
+            <use href="img/icon/sprite.svg#arrow-icon"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about-block">
+    <div class="about__container base-container">
+      <article class="about__info-block">
+        <div class="about__slider-container">
+          <div class="about__slider">
+            <div class="about__slider-wrapper">
+              <div class="about__slider-item">
+                <figure class="about__slider-image base-figure">
+                  <img class="about__slider-img" src="img/image/design/about-slide-1.png" alt="" loading="lazy">
+                </figure>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="about__slider-button about__slider-button--prev swiper-button-prev">
+            <svg class="about__slider-icon slider-icon" width="12" height="20">
+              <use href="img/icon/sprite.svg#arrow-icon"></use>
+            </svg>
+          </div>
+          <div class="about__slider-button about__slider-button--next swiper-button-next">
+            <svg class="about__slider-icon slider-icon" width="12" height="20">
+              <use href="img/icon/sprite.svg#arrow-icon"></use>
+            </svg>
+          </div> -->
+        </div>
+        <div class="about__info-body">
+          <h2 class="about__info-title section-title__article-block base-title">О враче гематологе</h2>
+          <p class="about__info-text base-par">
+            <span class="about__info-part">
+              Гематология – это раздел медицины, изучающий работу
+              кровеносной системы. Сегодня около 8% всех заболеваний
+              приходится на органы кроветворения.
+            </span>
+            <span class="about__info-part">
+              Гематолог – врач, занимающийся диагностикой, выявлением
+              и лечением заболеваний крови. Гематолог ведет как детский,
+              так и взрослый прием.
+            </span>
+            <span class="about__info-part">
+              Современные методики и инновационные разработки позволяют
+              диагностировать заболевания на ранних этапах возникновения
+              без явных клинических проявлений.
+            </span>
+          </p>
+        </div>
+      </article>
+      <div class="about__tabs">
+        <input class="about__radio-hidden visually-hidden" type="radio" id="tabs-radio-1" name="tabs-radio" checked>
+        <label class="about__tabs-button" for="tabs-radio-1">Образование</label>
+        <input class="about__radio-hidden visually-hidden" type="radio" id="tabs-radio-2" name="tabs-radio">
+        <label class="about__tabs-button" for="tabs-radio-2">Повышение квалификации</label>
+        <input class="about__radio-hidden visually-hidden" type="radio" id="tabs-radio-3" name="tabs-radio">
+        <label class="about__tabs-button" for="tabs-radio-3">Звания, членства, награды</label>
+        <input class="about__radio-hidden visually-hidden" type="radio" id="tabs-radio-4" name="tabs-radio">
+        <label class="about__tabs-button about__tabs-button--4" for="tabs-radio-4">Опыт работы</label>
+        <div class="about__tabs-body">
+          <div class="about__tabs-item about__tabs-radio--1">
+            <span class="about__tabs-title">Образование</span>
+            <ul class="about__tabs-list base-list">
+              <li class="about__tabs-value">2012 г. – лечебное дело, Первый Московский Государственный Медицинский
+                Университет им. И.М. Сеченова, Москва</li>
+              <li class="about__tabs-value">2013 г. – интернатура по терапии, Первый Московский Государственный
+                Медицинский Университет им. И.М. Сеченова, Москва</li>
+              <li class="about__tabs-value">2015 г. – ординатура по специальности “Гематология”, Гематологический
+                научный центр Российской академии медицинских наук, Москва</li>
+              <li class="about__tabs-value">2016 г. – повышение квалификации “Психосоматические расстройства”, ПМГМУ им.
+                И.М. Сеченова</li>
+              <li class="about__tabs-value">2016 г. – сертификат “Основы клинической трансфузиологии”, ФГБУ
+                дополнительного профессионального образования</li>
+              <li class="about__tabs-value">2018 г. – аспирантура “Гематология и переливание крови”, Гематологический
+                научный центр Российской академии медицинских наук, Москва</li>
+            </ul>
+          </div>
+          <div class="about__tabs-item about__tabs-radio--2">
+            <span class="about__tabs-title">Повышение квалификации</span>
+            <ul class="about__tabs-list base-list">
+              <li class="about__tabs-value"></li>
+            </ul>
+          </div>
+          <div class="about__tabs-item about__tabs-radio--3">
+            <span class="about__tabs-title">Звания, членства, награды</span>
+            <ul class="about__tabs-list base-list">
+              <li class="about__tabs-value"></li>
+            </ul>
+          </div>
+          <div class="about__tabs-item about__tabs-radio--4">
+            <span class="about__tabs-title">Опыт работы</span>
+            <ul class="about__tabs-list base-list">
+              <li class="about__tabs-value"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <article class="about__motto">
+        <h3 class="about__motto-title section-title__article-block base-title">Врач – это не профессия, а образ жизни
+        </h3>
+        <p class="about__motto-info base-par">
+          Доктором может быть не каждый. Это действительно призвание. Эта профессия
+          подходит тем, кто искренне хочет помогать людям, кто умеет сопереживать.
+          Если все эти качества соединены в одном человеке, то у него есть шанс
+          стать настоящим Врачом с большой буквы.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="reviews" id="reviews-block">
+    <div class="reviews__container base-container">
+      <h2 class="reviews__title section-title__slider-block base-title">Отзывы пациентов</h2>
+      <div class="reviews__slider-container">
+        <div class="reviews__slider swiper">
+          <div class="reviews__slider-inner swiper-wrapper">
+            <div class="reviews__slider-item swiper-slide">
+              <div class="reviews__item-head">
+                <figure class="reviews__item-image base-figure">
+                  <img src="img/image/content/review-item-1.png" class="reviews__item-img" alt="" loading="lazy">
+                </figure>
+                <span class="reviews__item-title">Елизавета Константинопольская</span>
+              </div>
+              <p class="reviews__item-body base-par">
+                Мне очень понравилось как Татьяна Игоревна
+                провела со мной консультацию. Было все подробно
+                рассказано, и я, не имея медицинского образования,
+                все понимала, что говорила мне врач.
+                После консультации я получила документы и рекомендации.
+                Я обязательно буду рекомендовать всем моим знакомым.
+              </p>
+            </div>
+            <div class="reviews__slider-item swiper-slide">
+              <div class="reviews__item-head">
+                <figure class="reviews__item-image base-figure">
+                  <img src="img/image/content/review-item-1.png" class="reviews__item-img" alt="" loading="lazy">
+                </figure>
+                <span class="reviews__item-title">Елизавета Константинопольская</span>
+              </div>
+              <p class="reviews__item-body base-par">
+                Мне очень понравилось как Татьяна Игоревна
+                провела со мной консультацию. Было все подробно
+                рассказано, и я, не имея медицинского образования,
+                все понимала, что говорила мне врач.
+                После консультации я получила документы и рекомендации.
+                Я обязательно буду рекомендовать всем моим знакомым.
+              </p>
+            </div>
+            <div class="reviews__slider-item swiper-slide">
+              <div class="reviews__item-head">
+                <figure class="reviews__item-image base-figure">
+                  <img src="img/image/content/review-item-1.png" class="reviews__item-img" alt="" loading="lazy">
+                </figure>
+                <span class="reviews__item-title">Елизавета Константинопольская</span>
+              </div>
+              <p class="reviews__item-body base-par">
+                Мне очень понравилось как Татьяна Игоревна
+                провела со мной консультацию. Было все подробно
+                рассказано, и я, не имея медицинского образования,
+                все понимала, что говорила мне врач.
+                После консультации я получила документы и рекомендации.
+                Я обязательно буду рекомендовать всем моим знакомым.
+              </p>
+            </div>
+            <div class="reviews__slider-item swiper-slide">
+              <div class="reviews__item-head">
+                <figure class="reviews__item-image base-figure">
+                  <img src="img/image/content/review-item-1.png" class="reviews__item-img" alt="" loading="lazy">
+                </figure>
+                <span class="reviews__item-title">Елизавета Константинопольская</span>
+              </div>
+              <p class="reviews__item-body base-par">
+                Мне очень понравилось как Татьяна Игоревна
+                провела со мной консультацию. Было все подробно
+                рассказано, и я, не имея медицинского образования,
+                все понимала, что говорила мне врач.
+                После консультации я получила документы и рекомендации.
+                Я обязательно буду рекомендовать всем моим знакомым.
+              </p>
+            </div>
+            <div class="reviews__slider-item swiper-slide">
+              <div class="reviews__item-head">
+                <figure class="reviews__item-image base-figure">
+                  <img src="img/image/content/review-item-1.png" class="reviews__item-img" alt="" loading="lazy">
+                </figure>
+                <span class="reviews__item-title">Елизавета Константинопольская</span>
+              </div>
+              <p class="reviews__item-body base-par">
+                Мне очень понравилось как Татьяна Игоревна
+                провела со мной консультацию. Было все подробно
+                рассказано, и я, не имея медицинского образования,
+                все понимала, что говорила мне врач.
+                После консультации я получила документы и рекомендации.
+                Я обязательно буду рекомендовать всем моим знакомым.
+              </p>
+            </div>
+            <div class="reviews__slider-item swiper-slide">
+              <div class="reviews__item-head">
+                <figure class="reviews__item-image base-figure">
+                  <img src="img/image/content/review-item-1.png" class="reviews__item-img" alt="" loading="lazy">
+                </figure>
+                <span class="reviews__item-title">Елизавета Константинопольская</span>
+              </div>
+              <p class="reviews__item-body base-par">
+                Мне очень понравилось как Татьяна Игоревна
+                провела со мной консультацию. Было все подробно
+                рассказано, и я, не имея медицинского образования,
+                все понимала, что говорила мне врач.
+                После консультации я получила документы и рекомендации.
+                Я обязательно буду рекомендовать всем моим знакомым.
+              </p>
+            </div>
+          </div>
+          <div class="reviews__slider-pagination swiper-pagination"></div>
+        </div>
+        <div class="reviews__slider-button reviews__slider-button--prev swiper-button-prev">
+          <svg class="reviews__slider-icon slider-icon" width="11" height="17">
+            <use href="img/icon/sprite.svg#arrow-icon"></use>
+          </svg>
+        </div>
+        <div class="reviews__slider-button reviews__slider-button--next swiper-button-next">
+          <svg class="reviews__slider-icon slider-icon" width="11" height="17">
+            <use href="img/icon/sprite.svg#arrow-icon"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq-block">
+    <div class="faq__container base-container">
+      <div class="faq__inner">
+        <div class="faq__main">
+          <h2 class="faq__title section-title base-title">О чём часто спрашивают</h2>
+          <div class="faq__spoilers">
+            <div class="faq__spoilers-item">
+              <input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-1" name="about-spoilers">
+              <label class="faq__spoilers-button" for="spoilers-check-1">
+                <span class="faq__spoilers-caption">Как будет проходить консультация?</span>
+                <div class="faq__spoilers-cross"></div>
+              </label>
+              <div class="faq__spoilers-content">
+              </div>
+            </div>
+            <div class="faq__spoilers-item">
+              <input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-2" name="about-spoilers">
+              <label class="faq__spoilers-button" for="spoilers-check-2">
+                <span class="faq__spoilers-caption">Можно ли записаться на консультацию если нет анализов?</span>
+                <div class="faq__spoilers-cross"></div>
+              </label>
+              <div class="faq__spoilers-content"></div>
+            </div>
+            <div class="faq__spoilers-item">
+              <input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-3" name="about-spoilers">
+              <label class="faq__spoilers-button" for="spoilers-check-3">
+                <span class="faq__spoilers-caption">Есть ли особые рекомендации перед консультацией врача –<br>
+                  гематолога</span>
+                <div class="faq__spoilers-cross"></div>
+              </label>
+              <div class="faq__spoilers-content"></div>
+            </div>
+            <div class="faq__spoilers-item">
+              <input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-4" name="about-spoilers">
+              <label class="faq__spoilers-button" for="spoilers-check-4">
+                <span class="faq__spoilers-caption">Может ли врач после консультации дать направление на лечение в
+                  какую-либо клинику?</span>
+                <div class="faq__spoilers-cross"></div>
+              </label>
+              <div class="faq__spoilers-content"></div>
+            </div>
+            <div class="faq__spoilers-item">
+              <input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-5" name="about-spoilers">
+              <label class="faq__spoilers-button" for="spoilers-check-5">
+                <span class="faq__spoilers-caption">Можно ли получить консультация врача – гематолога во время
+                  беременности</span>
+                <div class="faq__spoilers-cross"></div>
+              </label>
+              <div class="faq__spoilers-content"></div>
+            </div>
+            <div class="faq__spoilers-item">
+              <input class="faq__check-hidden visually-hidden" type="checkbox" id="spoilers-check-6" name="about-spoilers">
+              <label class="faq__spoilers-button" for="spoilers-check-6">
+                <span class="faq__spoilers-caption">Как можно отменить уже оплаченную консультацию?</span>
+                <div class="faq__spoilers-cross"></div>
+              </label>
+              <div class="faq__spoilers-content"></div>
+            </div>
+          </div>
+          <a class="faq__order-link order-link base-link" href="form.html#appointment-block">
+            <span class="order-link__caption">Записаться на консультацию</span>
+          </a>
+        </div>
+        <div class="faq__aside">
+          <div class="faq__aside-inner">
+            <figure class="faq__aside-image base-figure">
+              <img class="faq__aside-img" src="img/image/faq_img.png" alt="Изображение медицинской процедуры">
+              <!-- <span class="faq__whatsup-ball whatsup-ball rellax" data-rellax-speed="0.4">
+                <span class="whatsup-ball__inner">
+                  <svg class="whatsup-ball__icon" width="36" height="36">
+                    <use href="img/icon/sprite.svg#whatsup-icon"></use>
+                  </svg>
+                </span>
+              </span>
+              <span class="faq__phone-ball phone-ball rellax" data-rellax-speed="0.4">
+                <svg class="phone-ball__icon" width="30" height="30">
+                  <use href="img/icon/sprite.svg#phone-icon"></use>
+                </svg>
+              </span> -->
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="guide">
+    <img class="guide__graphic guide__graphic--left" src="img/image/design/guide-graphic-left.png">
+    <img class="guide__graphic guide__graphic--right" src="img/image/design/guide-graphic-right.png">
+    <img class="guide__graphic guide__graphic--top" src="img/image/design/guide-graphic-top.png">
+    <div class="guide__container base-container">
+      <h2 class="guide__title section-title base-title">Как проходит консультация врача</h2>
+      <div class="guide__inner">
+        <div class="guide__inner-item">
+          <figure class="guide__item-image base-figure">
+            <img class="guide__item-img" src="img/image/design/guide-item-1.png" alt="Изображение гаджетов и стетоскопа">
+          </figure>
+          <span class="guide__item-title">Изучение анализов</span>
+          <span class="guide__item-info">
+            Я предварительно изучаю<br>
+            ваши анализы и собираю<br>
+            анамнез
+          </span>
+        </div>
+        <div class="guide__inner-item">
+          <figure class="guide__item-image base-figure">
+            <img class="guide__item-img" src="img/image/design/guide-item-2.png" alt="Изображение смартфона">
+          </figure>
+          <span class="guide__item-title">Созвон с пациентом</span>
+          <span class="guide__item-info">
+            Мы с вами созваниваемся в<br>
+            выбранное вами время
+          </span>
+        </div>
+        <div class="guide__inner-item">
+          <figure class="guide__item-image base-figure">
+            <img class="guide__item-img" src="img/image/design/guide-item-3.png" alt="Изображение бумажного планшета и стетоскопа">
+          </figure>
+          <span class="guide__item-title">План лечения</span>
+          <span class="guide__item-info">
+            На консультации я назначаю<br>
+            вам план лечения либо<br>дообследование
+          </span>
+        </div>
+        <div class="guide__inner-item">
+          <figure class="guide__item-image base-figure">
+            <img class="guide__item-img" src="img/image/design/guide-item-4.png" alt="Изображение символа электронной почты">
+          </figure>
+          <span class="guide__item-title">Рекомендации по email</span>
+          <span class="guide__item-info">
+            Через 1-2 дня вам на почту<br>
+            приходит конспект нашей<br>
+            беседы и рекомендации в<br>
+            письменном виде
+          </span>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="appointment" id="appointment-block">
+    <div class="appointment__container base-container">
+
+      <form class="appointment__pay-form visually-hidden" id="appointment-pay-form" method="post" action="#">
+        <input type="hidden" name="receiver" value="XXXXXXXXXXXXXXXX" />
+        <input type="hidden" name="formcomment" value="Оплата консультации гематолога" />
+        <input type="hidden" name="short-dest" value="Оплата консультации гематолога" />
+        <input type="hidden" name="quickpay-form" value="shop" />
+        <input id="appointment-pay-target" type="hidden" name="targets" value="Первичная консультация" />
+        <input id="appointment-pay-sum" type="hidden" name="sum" value="4000" data-type="number" />
+        <input type="hidden" name="need-fio" value="true" />
+        <input type="hidden" name="need-email" value="true" />
+        <input type="hidden" name="need-phone" value="true" />
+        <input type="hidden" name="need-address" value="false" />
+        <input type="hidden" name="successURL" value="#success">
+        <input id="appointment-pay-submit" type="submit" value="Оплатить" />
+      </form>
+      <div class="appointment__success-modal appointment__success-modal" id="success">
+        <div class="appointment__success-wrapper">
+          <button class="appointment__success-close base-button" type="button" id="appointment-success-close"></button>
+          <div class="appointment__success-inner">
+            <h3 class="appointment__success-title base-title">Спасибо за оплату!</h3>
+            <span class="appointment__success-body">В течение дня ожидайте подтверждение записи от врача.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="appointment__inner">
+        <h2 class="appointment__title section-title base-title">Запишись на консультацию сейчас</h2>
+        <form class="appointment__form" id="appointment-form">
+          <div class="appointment__type">
+            <span class="appointment__type-title">Выберите вид консультации на которую вы хотите записаться</span>
+            <div class="appointment__type-body">
+              <div class="appointment__type-item">
+                <label class="appointment__type-label" for="appointment-type-radio-1">
+                  <input type="radio" class="appointment__hidden-type visually-hidden" id="appointment-type-radio-1" value="4000" data-typename="Первичный приём" name="appointment-type-radio" checked>
+                  <span class="appointment__type-radio">
+                    <svg class="appointment__check-icon check-icon" width="12" height="12">
+                      <use href="img/icon/sprite.svg#check-icon"></use>
+                    </svg>
+                  </span>
+                  <span class="appointment__type-caption">
+                    <span class="appointment__type-text">Первичный приём</span>
+                    <span class="appointment__type-price">4 000 ₽</span>
+                  </span>
+                </label>
+              </div>
+              <div class="appointment__type-item">
+                <label class="appointment__type-label" for="appointment-type-radio-2">
+                  <input type="radio" class="appointment__hidden-type visually-hidden" id="appointment-type-radio-2" value="3000" data-typename="Вторичный приём" name="appointment-type-radio">
+                  <span class="appointment__type-radio">
+                    <svg class="appointment__check-icon check-icon" width="12" height="12">
+                      <use href="img/icon/sprite.svg#check-icon"></use>
+                    </svg>
+                  </span>
+                  <span class="appointment__type-caption">
+                    <span class="appointment__type-text">Вторичный прием</span>
+                    <span class="appointment__type-price">3 000 ₽</span>
+                  </span>
+                </label>
+              </div>
+              <div class="appointment__type-item">
+                <label class="appointment__type-label" for="appointment-type-radio-3">
+                  <input type="radio" class="appointment__hidden-type visually-hidden" id="appointment-type-radio-3" value="6000" data-typename="English speaking patient consultation" name="appointment-type-radio">
+                  <span class="appointment__type-radio">
+                    <svg class="appointment__check-icon check-icon" width="12" height="12">
+                      <use href="img/icon/sprite.svg#check-icon"></use>
+                    </svg>
+                  </span>
+                  <span class="appointment__type-caption">
+                    <span class="appointment__type-text">English speaking patient<br>consultation</span>
+                    <span class="appointment__type-price">6 000 ₽</span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="appointment__info">
+            <div class="appointment__info-item">
+              <label class="appointment__info-label" for="appointment-name">Ваше имя</label>
+              <input class="appointment__info-input" type="text" id="appointment-name" placeholder="Напишите ваше имя" required>
+            </div>
+            <div class="appointment__info-item">
+              <label class="appointment__info-label" for="appointment-phone">Ваш телефон</label>
+              <input class="appointment__info-input" type="tel" id="appointment-phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="appointment__info-item">
+              <label class="appointment__info-label" for="appointment-email">Ваш email</label>
+              <input class="appointment__info-input" type="email" id="appointment-email" placeholder="info@mail.ru" required>
+            </div>
+          </div>
+          <div class="appointment__attach">
+            <span class="appointment__attach-title">
+              Прикрепите ваши анализы <br class="appointment__breakpoint">(не более 10)
+            </span>
+            <ul class="appointment__attach-list base-list" id="attach-list">
+              <input class="appointment__attach-hidden visually-hidden" type="file" multiple accept=".jpg,.jpeg,.png" id="attachInput" tabindex="-1">
+              <button class="appointment__attach-button base-button" type="button" id="attach-button">
+                <svg class="appointment__button-icon check-icon" width="28" height="24">
+                  <use href="img/icon/sprite.svg#camera-icon"></use>
+                </svg>
+                <span class="appointment__button-caption">Добавить фото</span>
+              </button>
+            </ul>
+          </div>
+
+          <div class="appointment__warning-block">
+            <button class="appointment__order-button base-button" type="button" id="appointment-modal-open">
+              <span class="appointment__order-caption">Выбрать дату и оплатить</span>
+            </button>
+            <button class="appointment__tooltip-container base-button" id="warning-modal-open" type="button">
+              <div class="appointment__tooltip-ring"></div>
+              <span class="appointment__tooltip-sign">!</span>
+            </button>
+          </div>
+
+          <div class="appointment__warning-modal" id="warning-modal">
+            <div class="appointment__warning-wrapper" id="warning-modal-wrapper">
+              <div class="appointment__warning-text">
+                <button class="appointment__warning-close base-button" id="warning-modal-close" type="button">
+                  <div class="appointment__warning-inner"></div>
+                </button>
+                <h3>Уважаемый Пациент!</h3>
+                <p>
+                  Запомните пожалуйста, что при любой дистанционной консультации не ставится окончательный диагноз и не
+                  назначается лечение. На дистанционной консультации Пациенту могут быть даны советы общего характера, а
+                  также может быть проведена предварительная оценка результатов анализов, и установлен предположительный
+                  диагноз. Установление окончательного диагноза, назначение конкретного лечения и выписка специальных
+                  медицинских препаратов возможны только при личном приеме!
+
+                  Пожалуйста, обратите внимание, что вы должны выйти на контакт для получения консультации строго в
+                  указанные в Заявке дату и время (задержка – не более 5 минут). В случае отсутствия коммуникации от вас
+                  в течение 15 минут после наступления времени консультации, а также в случае отклонения звонка либо
+                  запроса от врача в назначенное для консультации время, консультация считается не состоявшейся по вине
+                  самого Пациента, при этом уплаченные за консультацию денежные средства не подлежат возврату. Денежные
+                  средства, оплаченные за консультацию, подлежат возврату только в случае тяжелой болезни Пациента,
+                  которая не позволила пациенту вовремя выйти на контакт с врачом для получения консультации.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="appointment__modal" id="appointment-modal">
+            <div class="appointment__modal-wrapper">
+              <button class="appointment__modal-close base-button" type="button" id="appointment-modal-close"></button>
+              <span class="appointment__modal-title">Запись на первичный прием</span>
+              <span class="appointment__modal-info">Консультация ведется в онлайн форме по воскресеньям по
+                WhatsApp</span>
+              <div class="appointment__modal-date" id="appointment-modal-date">
+                <input class="appointment__hidden-date visually-hidden" type="date" id="appointment-date-input" tabindex="-1" name="appointment_date_input" required>
+
+                <input class="appointment__hidden-time visually-hidden" type="text" id="appointment-time-input" tabindex="-1" name="appointment_time_input" required>
+              </div>
+
+              <div class="appointment__modal-time appointment__modal-time--disabled appointment__modal-time--monday" id="monday-times">
+                <div class="appointment__time-item">
+                  <label class="appointment__time-radio">
+                    <input class="appointment__time-hidden visually-hidden" type="radio" name="radio-time-monday" value="10:00">
+                    <span class="appointment__time-text">10:00</span>
+                  </label>
+                </div>
+                <div class="appointment__time-item">
+                  <label class="appointment__time-radio">
+                    <input class="appointment__time-hidden visually-hidden" type="radio" name="radio-time-monday" value="11:00">
+                    <span class="appointment__time-text">11:00</span>
+                  </label>
+                </div>
+                <div class="appointment__time-item">
+                  <label class="appointment__time-radio">
+                    <input class="appointment__time-hidden visually-hidden" type="radio" name="radio-time-monday" value="12:00">
+                    <span class="appointment__time-text">12:00</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="appointment__modal-time appointment__modal-time--disabled appointment__modal-time--sunday" id="sunday-times">
+                <div class="appointment__time-item">
+                  <label class="appointment__time-radio">
+                    <input class="appointment__time-hidden visually-hidden" type="radio" name="radio-time-sunday" value="13:00" required>
+                    <span class="appointment__time-text">13:00</span>
+                  </label>
+                </div>
+                <div class="appointment__time-item">
+                  <label class="appointment__time-radio">
+                    <input class="appointment__time-hidden visually-hidden" type="radio" name="radio-time-sunday" value="14:00" required>
+                    <span class="appointment__time-text">14:00</span>
+                  </label>
+                </div>
+                <div class="appointment__time-item">
+                  <label class="appointment__time-radio">
+                    <input class="appointment__time-hidden visually-hidden" type="radio" name="radio-time-sunday" value="15:00" required>
+                    <span class="appointment__time-text">15:00</span>
+                  </label>
+                </div>
+              </div>
+
+              <span class="appointment__pricetag">К оплате <span id="appointment-price">4000</span> ₽</span>
+              <input class="appointment__price-input visually-hidden" type="number" id="appointment-price-result">
+              <input class="appointment__form-submit visually-hidden" type="submit" id="appointment-form-submit">
+              <input class="appointment__form-pay base-button" type="button" value="Оплатить" id="appointment-form-pay">
+              <input class="appointment__form-reset base-button" type="reset" value="Отменить" id="appointment-form-reset">
+            </div>
+          </div>
+
+          <div class="appointment__terms">
+            <input class="appointment__terms-hidden visually-hidden" type="checkbox" id="appointment-terms-of-use" value="terms-checked" checked>
+            <label class="appointment__terms-label" for="appointment-terms-of-use">
+              <span class="appointment__terms-shown">
+                <svg class="appointment__terms-check check-icon" width="15" height="15">
+                  <use href="img/icon/sprite.svg#check-icon"></use>
+                </svg>
+              </span>
+              <span class="appointment__terms-title">
+                Отправляя данную форму, вы принимаете условие <a class="appointment__terms-link base-link" href="#">пользовательского соглашения</a>
+              </span>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="required" id="required-block">
+    <div class="required__container base-container">
+      <div class="required__aside">
+        <figure class="required__image base-figure">
+          <picture>
+            <img srcset="img/image/design/required-graphic.png 1x, img/image/design/X2-required-graphic.png 2x" class="required__img" alt="Изображение эритроцитов" loading="lazy">
+          </picture>
+          <span class="required__whatsup-ball whatsup-ball rellax" data-rellax-speed="0.4">
+            <span class="whatsup-ball__inner">
+              <svg class="whatsup-ball__icon" width="36" height="36">
+                <use href="img/icon/sprite.svg#whatsup-icon"></use>
+              </svg>
+            </span>
+          </span>
+          <span class="required__phone-ball phone-ball rellax" data-rellax-speed="0.4">
+            <svg class="phone-ball__icon" width="30" height="30">
+              <use href="img/icon/sprite.svg#phone-icon"></use>
+            </svg>
+          </span>
+        </figure>
+      </div>
+      <div class="required__main">
+        <h2 class="required__title section-title base-title">Что нужно для получения консультации</h2>
+        <span class="required__info">Для консультации врача гематолога необходимо иметь:</span>
+        <ul class="required__list base-list">
+          <li class="required__list-item">Данные предыдущих выписок;</li>
+          <li class="required__list-item">Данные «недавних» анализов крови;</li>
+          <li class="required__list-item">Четко сформулированная проблема;</li>
+          <li class="required__list-item">Согласие на онлайн консультацию;</li>
+          <li class="required__list-item">Оплаченная запись и ее подтверждение.</li>
+        </ul>
+        <a class="required__order-link order-link base-link" href="#appointment-block">
+          <span class="order-link__caption">Записаться на консультацию</span>
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="questions">
+    <div class="questions__container base-container">
+      <div class="questions__main">
+        <p class="questions__headline base-par">
+          Если у вас остались вопросы,<br>
+          то вы можете написать администратору<br>
+          в Whatsapp
+        </p>
+        <a class="questions__whatsup-button whatsup-link base-link" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener noreferrer">
+          <svg class="whatsup-link__icon" width="19" height="19">
+            <use href="img/icon/sprite.svg#whatsup-icon"></use>
+          </svg>
+          <span class="whatsup-link__caption">Перейти в WhatsApp</span>
+        </a>
+      </div>
+      <div class="questions__aside">
+        <div class="questions__aside-inner">
+          <figure class="questions__aside-image base-figure">
+            <img class="questions__aside-img" src="img/image/design/questions-graphic.png" alt="Фотография врача">
+          </figure>
+        </div>
+      </div>
+      <span class="questions__whatsup-ball whatsup-ball rellax" data-rellax-speed="0.4">
+        <span class="whatsup-ball__inner">
+          <svg class="whatsup-ball__icon" width="36" height="36">
+            <use href="img/icon/sprite.svg#whatsup-icon"></use>
+          </svg>
+        </span>
+      </span>
+      <span class="questions__phone-ball phone-ball rellax" data-rellax-speed="0.4">
+        <svg class="phone-ball__icon" width="30" height="30">
+          <use href="img/icon/sprite.svg#phone-icon"></use>
+        </svg>
+      </span>
+    </div>
+  </section> -->
+</main>
+		<footer class="page-footer">
+  <section class="footer-heading">
+    <div class="footer-heading__container base-container">
+      <figure class="footer-heading__logo-block logo-block base-figure">
+        <img class="logo-block__img" src="img/image/content/logo.svg" width="194" height="59" alt="Логотип с сердцем">
+      </figure>
+      <div class="footer-heading__desc">
+        <span class="footer-heading__desc-top">Консультация врача<br> гематолога</span>
+        <span class="footer-heading__desc-bottom">Кандидат медицинских наук</span>
+      </div>
+      <div class="footer-heading__info">
+        <span class="footer-heading__info-top">
+          Запись ведется в онлайн форме<br>по WhatsApp, а также очно<br>в НКЦПГ им. А.А. Шмидта.
+        </span>
+        <a href="#" class="footer-heading__file-loader base-link">
+          <svg class="footer-heading__file-icon" width="17" height="21">
+            <use href="img/icon/sprite.svg#file-icon"></use>
+          </svg>
+          <span class="footer-heading__file-caption">Информированное добровольное согласие *.pdf</span>
+        </a>
+        <a href="#" class="footer-heading__file-loader base-link">
+          <svg class="footer-heading__file-icon" width="17" height="21">
+            <use href="img/icon/sprite.svg#file-icon"></use>
+          </svg>
+          <span class="footer-heading__file-caption">Оферта *.pdf</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-underline">
+    <div class="footer-underline__container base-container">
+      <a href="#" class="footer-underline__policy-link base-link">Политика конфиденциальности</a>
+      <span class="footer-underline__copyright">Copyright © 2021</span>
+      <a class="footer-underline__credits-link base-link" href="https://is-art.ru" target="_blank"
+        rel="noopener noreferrer">
+        <span class="footer-underline__credits-caption">Разработано</span>
+        <svg class="footer-underline__credits-icon" width="53" height="21">
+          <use href="img/icon/sprite.svg#isart-logo-icon"></use>
+        </svg>
+      </a>
+    </div>
+  </section>
+</footer>
+	</div>
+	<script src="js/index.min.js"></script>
+</body>
+
+</html>

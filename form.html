@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="date=no">
+	<meta name="format-detection" content="address=no">
+	<meta name="format-detection" content="email=no">
+	<meta name="theme-color" content="#29B7C1">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	<link href="./css/style.min.css" rel="stylesheet">
+
+	<title>Доктор Лобанова - консультации гематолога</title>
+</head>
+
+<body>
+  <div class="body-container">
+    <header class="page-header">
+  <section class="headline">
+    <div class="headline__container base-container">
+      <a href="index.html">
+        <figure class="headline__logo-block logo-block base-figure">
+          <picture>
+            <source srcset="img/image/content/logo.svg" media="(min-width: 1024px)">
+            <img srcset="img/image/content/logo-mobile.svg" class="headline__logo-img" alt="Логотип">
+          </picture>
+        </figure>
+      </a>
+      <div class="headline__link-block">
+        <div class="headline__newLinks">
+          <a class="newHeading__socials-link newHeading__wa-link base-link" href="" target="_blank" rel="noreffer">
+            <img class="newHeading__link-icon" src="img/image/wa-icon.svg" width="44" height="44" alt="#">
+          </a>
+          <a class="newHeading__socials-link newHeading__tg-link base-link" href="" target="_blank" rel="noreffer">
+            <img class="newHeading__link-icon" src="img/image/tg-icon.svg" width="44" height="44" alt="#">
+          </a>
+        </div>
+        <a class="headline__order-link order-link base-link" href="form.html#appointment-block" id="head-order">
+          <span class="order-link__caption">Консультация онлайн</span>
+        </a>
+        <a class="headline__whatsup-link whatsup-link base-link" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener noreferrer" id="head-whatsup">
+          <svg class="whatsup-link__icon" width="19" height="19">
+            <use href="img/icon/sprite.svg#whatsup-icon"></use>
+          </svg>
+          <span class="whatsup-link__caption">Перейти в WhatsApp</span>
+        </a>
+      </div>
+      <button class="headline__burger" id="burger">
+        <span class="headline__burger-line"></span>
+        <span class="headline__burger-line"></span>
+        <span class="headline__burger-line"></span>
+      </button>
+    </div>
+  </section>
+  <nav class="main-nav" id="main-nav">
+    <div class="main-nav__container base-container">
+      <ul class="main-nav__list base-list">
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link main-nav__link base-link" href="#about-block">О враче</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link main-nav__link base-link" href="#required-block">Как получить консультацию</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link main-nav__link base-link" href="#diplomas-block">Дипломы и сертификаты</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link main-nav__link base-link" href="#faq-block">Вопросы и ответы</a>
+        </li>
+        <li class="main-nav__list-item">
+          <a class="main-nav__list-link main-nav__link base-link" href="#reviews-block">Отзывы пациентов</a>
+        </li>
+        <li class="main-nav__list-item main-nav__order-item">
+          <a class="main-nav__order-link main-nav__link base-link" href="form.html#appointment-block">Консультация онлайн</a>
+        </li>
+        <li class="main-nav__list-item main-nav__whatsup-item">
+          <a class="main-nav__whatsup-link main-nav__link base-link" href="https://wa.me/XXXXXXXXXXX" target="_blank" rel="noopener noreferrer">Перейти в WhatsApp</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- <section class="heading">
+    <div class="heading__top">
+      <div class="heading__top-container base-container">
+        <h1 class="heading__title base-title">
+          Консультация<br><span class="heading__title-highlight">врача гематолога</span>
+        </h1>
+        <div class="heading__top-info">
+          <span class="heading__name">Лобанова Татьяна Игоревна</span>
+          <span class="heading__profession">Кандидат медицинских наук</span>
+        </div>
+      </div>
+    </div>
+    <div class="heading__bottom">
+      <div class="heading__bottom-container base-container">
+        <ul class="heading__bottom-list base-list">
+          <li class="heading__list-item">Вам никуда не нужно ехать или идти</li>
+          <li class="heading__list-item">Высококвалифицированный врач</li>
+          <li class="heading__list-item">Быстрое получение результата и назначения</li>
+        </ul>
+        <div class="heading__bottom-info">
+          <div class="heading__order-wrapper">
+            <a class="heading__order-link order-link base-link" href="#appointment-block">
+              <span class="order-link__caption">Записаться на консультацию
+            </a>
+          </div>
+          <span class="heading__bottom-description">
+            Консультации ведутся в онлайн<br>
+            форме по воскресеньям по<br>
+            WhatsApp
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="heading__image-block">
+      <div class="heading__image-inner">
+        <figure class="heading__photo-image base-figure">
+          <picture>
+            <source srcset="img/image/content/heading-photo.webp 1x, img/image/content/X2-heading-photo.webp 2x"
+              type="image/webp">
+            <img srcset="img/image/content/heading-photo.png 1x, img/image/content/X2-heading-photo.png 2x"
+              class="heading__photo-img" alt="Фото врача">
+          </picture>
+        </figure>
+        <figure class="heading__graphic base-figure">
+          <img class="heading__graphic-img" src="img/image/design/heading-graphic.svg" alt="">
+        </figure>
+        <span class="heading__whatsup-ball whatsup-ball base-link" id="whatsup-ball">
+          <span class="whatsup-ball__inner">
+            <svg class="whatsup-ball__icon" width="23" height="22">
+              <use href="img/icon/sprite.svg#whatsup-icon"></use>
+            </svg>
+          </span>
+        </span>
+        <div class="heading__experience" id="experience-block">
+          <div class="heading__experience-headline">
+            <span class="heading__experience-title">9+ лет</span>
+            <picture>
+              <img srcset="img/image/design/heading-fat-love.png 1x, img/image/design/X2-heading-fat-love.png 2x"
+                class="heading__experience-img" alt="Изображение сердечка">
+            </picture>
+          </div>
+          <span class="heading__experience-info">Стаж врача гематолога</span>
+        </div>
+        <div class="heading__patients" id='patients-block'>
+          <div class="heading__patients-inner">
+            <img class="heading__patients-love" src="img/image/design/heading-love.svg" width="47" height="47" alt="">
+            <picture>
+              <img srcset="img/image/design/heading-patients.png 1x, img/image/design/X2-heading-patients.png 2x"
+                class="heading__patients-img" alt="Фотографии счастливых пациентов">
+            </picture>
+            <span class="heading__patients-title">10 000+</span>
+            <span class="heading__patients-info">Счастливых пациентов</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+</header>
+
+    <section class="appointment" id="appointment-block">
+      <div class="appointment__container base-container">
+
+        <form class="appointment__pay-form visually-hidden" id="appointment-pay-form" method="post" action="#">
+          <input type="hidden" name="receiver" value="XXXXXXXXXXXXXXXX" />
+          <input type="hidden" name="formcomment" value="Оплата консультации гематолога" />
+          <input type="hidden" name="short-dest" value="Оплата консультации гематолога" />
+          <input type="hidden" name="quickpay-form" value="shop" />
+          <input id="appointment-pay-target" type="hidden" name="targets" value="Первичная консультация" />
+          <input id="appointment-pay-sum" type="hidden" name="sum" value="4000" data-type="number" />
+          <input type="hidden" name="need-fio" value="true" />
+          <input type="hidden" name="need-email" value="true" />
+          <input type="hidden" name="need-phone" value="true" />
+          <input type="hidden" name="need-address" value="false" />
+          <input type="hidden" name="successURL" value="#success">
+          <input id="appointment-pay-submit" type="submit" value="Оплатить" />
+        </form>
+        <div class="appointment__success-modal appointment__success-modal" id="success">
+          <div class="appointment__success-wrapper">
+            <button class="appointment__success-close base-button" type="button" id="appointment-success-close"></button>
+            <div class="appointment__success-inner">
+              <h3 class="appointment__success-title base-title">Спасибо за оплату!</h3>
+              <span class="appointment__success-body">В течение дня ожидайте подтверждение записи от врача.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="appointment__inner">
+          <h2 class="appointment__title section-title base-title">Запишись на консультацию сейчас</h2>
+          <form class="appointment__form" id="appointment-form">
+            <div class="appointment__type">
+              <span class="appointment__type-title">Выберите вид консультации на которую вы хотите записаться</span>
+              <div class="appointment__type-body">
+                <div class="appointment__type-item">
+                  <label class="appointment__type-label" for="appointment-type-radio-1">
+                    <input type="radio" class="appointment__hidden-type visually-hidden" id="appointment-type-radio-1" value="4000" data-typename="Первичный приём" name="appointment-type-radio" checked>
+                    <span class="appointment__type-radio">
+                      <svg class="appointment__check-icon check-icon" width="12" height="12">
+                        <use href="img/icon/sprite.svg#check-icon"></use>
+                      </svg>
+                    </span>
+                    <span class="appointment__type-caption">
+                      <span class="appointment__type-text">Первичный приём</span>
+                      <span class="appointment__type-price">4 000 ₽</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="appointment__type-item">
+                  <label class="appointment__type-label" for="appointment-type-radio-2">
+                    <input type="radio" class="appointment__hidden-type visually-hidden" id="appointment-type-radio-2" value="3000" data-typename="Вторичный приём" name="appointment-type-radio">
+                    <span class="appointment__type-radio">
+                      <svg class="appointment__check-icon check-icon" width="12" height="12">
+                        <use href="img/icon/sprite.svg#check-icon"></use>
+                      </svg>
+                    </span>
+                    <span class="appointment__type-caption">
+                      <span class="appointment__type-text">Вторичный прием</span>
+                      <span class="appointment__type-price">3 000 ₽</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="appointment__type-item">
+                  <label class="appointment__type-label" for="appointment-type-radio-3">
+                    <input type="radio" class="appointment__hidden-type visually-hidden" id="appointment-type-radio-3" value="6000" data-typename="English speaking patient consultation" name="appointment-type-radio">
+                    <span class="appointment__type-radio">
+                      <svg class="appointment__check-icon check-icon" width="12" height="12">
+                        <use href="img/icon/sprite.svg#check-icon"></use>
+                      </svg>
+                    </span>
+                    <span class="appointment__type-caption">
+                      <span class="appointment__type-text">English speaking patient<br>consultation</span>
+                      <span class="appointment__type-price">6 000 ₽</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="appointment__info">
+              <div class="appointment__info-item">
+                <label class="appointment__info-label" for="appointment-name">Ваше имя</label>
+                <input class="appointment__info-input" type="text" id="appointment-name" placeholder="Напишите ваше имя" required>
+              </div>
+              <div class="appointment__info-item">
+                <label class="appointment__info-label" for="appointment-phone">Ваш телефон</label>
+                <input class="appointment__info-input" type="tel" id="appointment-phone" placeholder="+7 (___) ___-__-__" required>
+              </div>
+              <div class="appointment__info-item">
+                <label class="appointment__info-label" for="appointment-email">Ваш email</label>
+                <input class="appointment__info-input" type="email" id="appointment-email" placeholder="info@mail.ru" required>
+              </div>
+            </div>
+            <div class="appointment__attach">
+              <span class="appointment__attach-title">
+                Прикрепите ваши анализы <br class="appointment__breakpoint">(не более 10)
+              </span>
+              <ul class="appointment__attach-list base-list" id="attach-list">
+                <input class="appointment__attach-hidden visually-hidden" type="file" multiple accept=".jpg,.jpeg,.png" id="attachInput" tabindex="-1">
+                <button class="appointment__attach-button base-button" type="button" id="attach-button">
+                  <svg class="appointment__button-icon check-icon" width="28" height="24">
+                    <use href="img/icon/sprite.svg#camera-icon"></use>
+                  </svg>
+                  <span class="appointment__button-caption">Добавить фото</span>
+                </button>
+              </ul>
+            </div>
+
+            <div class="appointment__warning-block">
+              <button class="appointment__order-button base-button" type="button" id="appointment-modal-open">
+                <span class="appointment__order-caption">Выбрать дату и оплатить</span>
+              </button>
+              <button class="appointment__tooltip-container base-button" id="warning-modal-open" type="button">
+                <div class="appointment__tooltip-ring"></div>
+                <span class="appointment__tooltip-sign">!</span>
+              </button>
+            </div>
+
+            <div class="appointment__warning-modal" id="warning-modal">
+              <div class="appointment__warning-wrapper" id="warning-modal-wrapper">
+                <div class="appointment__warning-text">
+                  <button class="appointment__warning-close base-button" id="warning-modal-close" type="button">
+                    <div class="appointment__warning-inner"></div>
+                  </button>
+                  <h3>Уважаемый Пациент!</h3>
+                  <p>
+                    Запомните пожалуйста, что при любой дистанционной консультации не ставится окончательный диагноз и не
+                    назначается лечение. На дистанционной консультации Пациенту могут быть даны советы общего характера, а
+                    также может быть проведена предварительная оценка результатов анализов, и установлен предположительный
+                    диагноз. Установление окончательного диагноза, назначение конкретного лечения и выписка специальных
+                    медицинских препаратов возможны только при личном приеме!
+
+                    Пожалуйста, обратите внимание, что вы должны выйти на контакт для получения консультации строго в
+                    указанные в Заявке дату и время (задержка – не более 5 минут). В случае отсутствия коммуникации от вас
+                    в течение 15 минут после наступления времени консультации, а также в случае отклонения звонка либо
+                    запроса от врача в назначенное для консультации время, консультация считается не состоявшейся по вине
+                    самого Пациента, при этом уплаченные за консультацию денежные средства не подлежат возврату. Денежные
+                    средства, оплаченные за консультацию, подлежат возврату только в случае тяжелой болезни Пациента,
+                    которая не позволила пациенту вовремя выйти на контакт с врачом для получения консультации.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="appointment__modal" id="appointment-modal">
+              <div class="appointment__modal-wrapper">
+                <button class="appointment__modal-close base-button" type="button" id="appointment-modal-close"></button>
+                <span class="appointment__modal-title">Запись на первичный прием</span>
+                <span class="appointment__modal-info">Консультация ведется в онлайн форме по воскресеньям по
+                  WhatsApp</span>
+                <div class="appointment__modal-date" id="appointment-modal-date">
+                  <input class="appointment__hidden-date visually-hidden" type="date" id="appointment-date-input" tabindex="-1" name="appointment_date_input" required>
+
+                  <input class="appointment__hidden-time visually-hidden" type="text" id="appointment-time-input" tabindex="-1" name="appointment_time_input" required>
+                </div>
+
+                <div class="appointment__modal-time appointment__modal-time--disabled appointment__modal-time--monday" id="monday-times">
+                  <div class="appointment__time-item">
+                    <label class="appointment__time-radio">
+                      <input class="appointment__time-hidden visually-hidden" type="radio" name="radio-time-monday" value="10:00">
+                      <span class="appointment__time-text">10:00</span>
+                    </label>
+                  </div>
+                  <div class="appointment__time-item">
+                    <label class="appointment__time-radio">
+                      <input class="appointment__time-hidden visually-hidden" type="radio" name="radio-time-monday" value="11:00">
+                      <span class="appointment__time-text">11:00</span>
+                    </label>
+                  </div>
+                  <div class="appointment__time-item">
+                    <label class="appointment__time-radio">
+                      <input class="appointment__time-hidden visually-hidden" type="radio" name="radio-time-monday" value="12:00">
+                      <span class="appointment__time-text">12:00</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="appointment__modal-time appointment__modal-time--disabled appointment__modal-time--sunday" id="sunday-times">
+                  <div class="appointment__time-item">
+                    <label class="appointment__time-radio">
+                      <input class="appointment__time-hidden visually-hidden" type="radio" name="radio-time-sunday" value="13:00" required>
+                      <span class="appointment__time-text">13:00</span>
+                    </label>
+                  </div>
+                  <div class="appointment__time-item">
+                    <label class="appointment__time-radio">
+                      <input class="appointment__time-hidden visually-hidden" type="radio" name="radio-time-sunday" value="14:00" required>
+                      <span class="appointment__time-text">14:00</span>
+                    </label>
+                  </div>
+                  <div class="appointment__time-item">
+                    <label class="appointment__time-radio">
+                      <input class="appointment__time-hidden visually-hidden" type="radio" name="radio-time-sunday" value="15:00" required>
+                      <span class="appointment__time-text">15:00</span>
+                    </label>
+                  </div>
+                </div>
+
+                <span class="appointment__pricetag">К оплате <span id="appointment-price">4000</span> ₽</span>
+                <input class="appointment__price-input visually-hidden" type="number" id="appointment-price-result">
+                <input class="appointment__form-submit visually-hidden" type="submit" id="appointment-form-submit">
+                <input class="appointment__form-pay base-button" type="button" value="Оплатить" id="appointment-form-pay">
+                <input class="appointment__form-reset base-button" type="reset" value="Отменить" id="appointment-form-reset">
+              </div>
+            </div>
+
+            <div class="appointment__terms">
+              <input class="appointment__terms-hidden visually-hidden" type="checkbox" id="appointment-terms-of-use" value="terms-checked" checked>
+              <label class="appointment__terms-label" for="appointment-terms-of-use">
+                <span class="appointment__terms-shown">
+                  <svg class="appointment__terms-check check-icon" width="15" height="15">
+                    <use href="img/icon/sprite.svg#check-icon"></use>
+                  </svg>
+                </span>
+                <span class="appointment__terms-title">
+                  Отправляя данную форму, вы принимаете условие <a class="appointment__terms-link base-link" href="#">пользовательского соглашения</a>
+                </span>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+  <section class="footer-heading">
+    <div class="footer-heading__container base-container">
+      <figure class="footer-heading__logo-block logo-block base-figure">
+        <img class="logo-block__img" src="img/image/content/logo.svg" width="194" height="59" alt="Логотип с сердцем">
+      </figure>
+      <div class="footer-heading__desc">
+        <span class="footer-heading__desc-top">Консультация врача<br> гематолога</span>
+        <span class="footer-heading__desc-bottom">Кандидат медицинских наук</span>
+      </div>
+      <div class="footer-heading__info">
+        <span class="footer-heading__info-top">
+          Запись ведется в онлайн форме<br>по WhatsApp, а также очно<br>в НКЦПГ им. А.А. Шмидта.
+        </span>
+        <a href="#" class="footer-heading__file-loader base-link">
+          <svg class="footer-heading__file-icon" width="17" height="21">
+            <use href="img/icon/sprite.svg#file-icon"></use>
+          </svg>
+          <span class="footer-heading__file-caption">Информированное добровольное согласие *.pdf</span>
+        </a>
+        <a href="#" class="footer-heading__file-loader base-link">
+          <svg class="footer-heading__file-icon" width="17" height="21">
+            <use href="img/icon/sprite.svg#file-icon"></use>
+          </svg>
+          <span class="footer-heading__file-caption">Оферта *.pdf</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-underline">
+    <div class="footer-underline__container base-container">
+      <a href="#" class="footer-underline__policy-link base-link">Политика конфиденциальности</a>
+      <span class="footer-underline__copyright">Copyright © 2021</span>
+      <a class="footer-underline__credits-link base-link" href="https://is-art.ru" target="_blank"
+        rel="noopener noreferrer">
+        <span class="footer-underline__credits-caption">Разработано</span>
+        <svg class="footer-underline__credits-icon" width="53" height="21">
+          <use href="img/icon/sprite.svg#isart-logo-icon"></use>
+        </svg>
+      </a>
+    </div>
+  </section>
+</footer>
+  </div>
+  <script src="js/index.min.js"></script>
+</body>
+
+</html>
