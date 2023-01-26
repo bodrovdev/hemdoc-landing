@@ -55,7 +55,7 @@
     flex-direction: column;
     align-items: center;
 
-    background-color: var(--color-viking);
+    background-color: #29b7c1;
     border-radius: 15px;
 
     @include mixins.respond-to(mobileOnly) {
