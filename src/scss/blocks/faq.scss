@@ -1,0 +1,447 @@
+@use "../mixins";
+
+.faq {
+
+  z-index: 5;
+
+  @include mixins.respond-to(mobileOnly) {
+    margin-bottom: 50px;
+  }
+
+  @include mixins.respond-to(tablet) {
+    margin-bottom: 50px;
+  }
+
+  @include mixins.respond-to(desktopS) {
+    margin-bottom: 95px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template: 290px 1fr / 1fr;
+    grid-row-gap: 30px;
+    align-items: center;
+    justify-items: center;
+
+    // background-color: var(--color-viking);
+    background: url('../img/image/faq_cover.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+
+    @include mixins.respond-to(mobileOnly) {
+      padding: 10px 10px 20px 10px;
+    }
+
+    @include mixins.respond-to(tablet) {
+      grid-template: 350px 1fr / 1fr;
+
+      padding: 20px 0 20px 0;
+    }
+
+    @include mixins.respond-to(desktopS) {
+      // max-width: 1193px;
+
+      padding: 50px 0 30px 50px;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      grid-template: auto / auto auto;
+      align-items: start;
+      grid-row-gap: 0;
+    }
+  }
+
+  &__main {
+    @include mixins.respond-to(mobileOnly) {
+      order: 2;
+    }
+
+    @include mixins.respond-to(tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding: 10px 0 10px 10px;
+
+      order: 2;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      order: 1;
+      align-items: flex-start;
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    color: var(--color-white) !important;
+
+    padding-bottom: 20px;
+    margin: 0 0 30px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 81px;
+      height: 15px;
+      background-image: url("../img/image/design/title-graphic-white.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    @include mixins.respond-to(tablet) {
+      align-self: flex-start;
+    }
+
+    @include mixins.respond-to(desktopS) {
+      padding-bottom: 25px;
+      margin: 0 0 37px 0;
+    }
+  }
+
+  &__spoilers {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 35px;
+
+    &-item {
+      flex-grow: 0;
+
+      background-color: var(--color-white);
+      border-radius: 28px;
+
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      @include mixins.respond-to(mobileOnly) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      @include mixins.respond-to(tabletOnly) {
+        width: 490px;
+      }
+
+      @include mixins.respond-to(desktopS) {
+        width: 100%;
+
+        max-width: 637px;
+      }
+
+      @include mixins.respond-to(desktopD) {
+        min-width: 637px;
+      }
+    }
+
+    &-button {
+      display: grid;
+      grid-template: 1fr / 1fr 15px;
+      grid-column-gap: 20px;
+      align-items: center;
+
+      pointer-events: auto;
+      cursor: pointer;
+
+      padding: 10px;
+
+      @include mixins.respond-to(mobileOnly) {
+        width: 100%;
+      }
+
+      @include mixins.respond-to(tablet) {
+        padding: 15px 25px 15px 25px;
+
+        &:hover .faq__spoilers-cross::before {
+          background-color: var(--color-scooter);
+        }
+
+        &:hover .faq__spoilers-cross::after {
+          background-color: var(--color-scooter);
+        }
+      }
+
+      @include mixins.respond-to(desktopD) {
+        padding: 13px 25px 13px 25px;
+      }
+    }
+
+    &-caption {
+      user-select: none;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--color-black);
+    }
+
+    &-cross {
+      position: relative;
+
+      flex-shrink: 0;
+
+      width: 15px;
+      height: 15px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+
+        width: 15px;
+        height: 3px;
+        background-color: var(--color-ghost);
+
+        transition: 0.1s;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
+        left: 0;
+
+        width: 15px;
+        height: 3px;
+        background-color: var(--color-ghost);
+
+        transition: 0.1s;
+      }
+    }
+
+    &-content {
+
+      display: none;
+
+      max-width: 100%;
+      border-top: 1px solid var(--color-ghost);
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: var(--color-black);
+
+      padding: 15px 25px;
+
+      &--opened {
+        display: block;
+      }
+    }
+
+  }
+
+  &__check-hidden:checked~.faq__spoilers-content {
+    display: block;
+  }
+
+  &__check-hidden:checked+.faq__spoilers-button .faq__spoilers-cross::after {
+    transform: translateY(-1px) rotate(180deg);
+    transition: rotate, 0.2s;
+  }
+
+  &__check-hidden:focus-visible+.faq__spoilers-button {
+    outline: solid var(--color-monza);
+    outline-offset: 5px;
+
+    transition: all 0.1s;
+  }
+
+  &__check-hidden:focus-visible+.faq__spoilers-button .faq__spoilers-cross::before {
+    background-color: var(--color-scooter) !important;
+
+    transition: 0.1s;
+  }
+
+  &__check-hidden:focus-visible+.faq__spoilers-button .faq__spoilers-cross::after {
+    background-color: var(--color-scooter) !important;
+
+    transition: 0.1s;
+  }
+
+  &__order-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 315px;
+
+    @include mixins.respond-to(mobileOnly) {
+      width: 220px;
+
+      margin: 0 auto;
+    }
+  }
+
+  &__aside {
+    @include mixins.respond-to(mobileOnly) {
+      order: 1;
+    }
+
+    @include mixins.respond-to(tablet) {
+      order: 1;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      position: relative;
+      top: 10px;
+      right: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      order: 2;
+
+      // width: 400px;
+      height: 100%;
+    }
+
+    @include mixins.respond-to(desktopM) {
+      width: 559px;
+    }
+  }
+
+  &__aside-inner {
+    position: relative;
+
+    @include mixins.respond-to(mobileOnly) {
+      width: fit-content;
+      height: auto;
+    }
+
+    @include mixins.respond-to(tablet) {
+      left: auto;
+      right: -20px;
+    }
+  }
+
+  &__aside-image {
+    @include mixins.respond-to(tablet) {
+      position: relative;
+    }
+  }
+
+  &__aside-img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+
+    z-index: 5;
+
+    // @include mixins.respond-to(mobileOnly) {
+    //   width: 280px;
+    // }
+
+    // @include mixins.respond-to(tablet) {
+    //   width: 350px;
+    // }
+
+    // @include mixins.respond-to(desktopD) {
+    //   width: 400px;
+    // }
+
+    // @include mixins.respond-to(desktopM) {
+    //   width: 559px;
+    // }
+  }
+
+  &__whatsup-ball {
+    position: absolute;
+
+    @include mixins.respond-to(mobileOnly) {
+      bottom: 0;
+      right: 0;
+
+      width: 65px;
+      height: 65px;
+    }
+
+    @include mixins.respond-to(tablet) {
+      bottom: 0;
+      right: 0;
+
+      width: 65px;
+      height: 65px;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      width: 100px;
+      height: 100px;
+    }
+
+    @include mixins.respond-to(desktopM) {
+      bottom: 23px;
+      right: 56px;
+      transform: none;
+      left: auto;
+    }
+  }
+
+  & .whatsup-ball__inner {
+
+    @include mixins.respond-to(mobileOnly) {
+      width: 35px;
+      height: 35px;
+    }
+
+    @include mixins.respond-to(tablet) {
+      width: 35px;
+      height: 35px;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  & .whatsup-ball__icon {
+    @include mixins.respond-to(mobileOnly) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @include mixins.respond-to(tablet) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  &__phone-ball {
+    position: absolute;
+
+    @include mixins.respond-to(mobileOnly) {
+      top: 0;
+      left: 0;
+    }
+
+    @include mixins.respond-to(tablet) {
+      top: 0;
+      left: 0;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      top: 29px;
+      left: 54px;
+    }
+  }
+}

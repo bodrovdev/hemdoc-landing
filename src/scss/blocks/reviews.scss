@@ -1,0 +1,232 @@
+@use "../mixins";
+
+.reviews {
+  z-index: 5;
+
+  @include mixins.respond-to(mobileOnly) {
+    margin-bottom: 50px;
+  }
+
+  @include mixins.respond-to(tablet) {
+    margin-bottom: 50px;
+  }
+
+  @include mixins.respond-to(desktopS) {
+    margin-bottom: 135px;
+  }
+
+  &__container {
+    z-index: 5;
+  }
+
+  &__title {
+    position: relative;
+
+    padding-bottom: 20px;
+    margin: 0 0 30px 0;
+
+    @include mixins.respond-to(tablet) {
+      display: inline-block;
+
+      width: fit-content;
+
+      padding: 0 100px 0 0;
+      margin: 0 0 40px 0;
+    }
+
+    @include mixins.respond-to(desktopS) {
+      padding: 0 114px 0 58px;
+      margin: 0 0 42px 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 81px;
+      height: 15px;
+      background-image: url("../img/image/design/title-graphic.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+      @include mixins.respond-to(tablet) {
+        top: 55%;
+        transform: translateY(-55%);
+        left: auto;
+        right: 0;
+      }
+
+      @include mixins.respond-to(desktopS) {
+        top: 54%;
+      }
+    }
+  }
+
+  &__slider-container {
+    position: relative;
+
+    padding: 0 30px 0 30px;
+  }
+
+  &__slider {
+    z-index: 5;
+
+    padding: 30px 20px 20px 20px;
+    margin: 0 -20px;
+  }
+
+  &__slider-inner {
+    display: flex !important;
+    align-items: stretch;
+
+    margin-bottom: 50px;
+  }
+
+  &__slider-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: auto;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    user-select: none;
+
+    transition: all 0.3s;
+
+    z-index: 5;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: 20px;
+
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: url("../img/image/design/quotes-square.svg") var(--color-monza);
+      background-position: center;
+      background-size: 14px 12px;
+      background-repeat: no-repeat;
+
+      z-index: 10;
+    }
+
+    @include mixins.respond-to(mobileOnly) {
+      padding: 20px;
+    }
+
+    @include mixins.respond-to(tablet) {
+      padding: 38px 31px 40px 31px;
+
+      &:hover {
+        transform: translateY(-10px);
+
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &__item-head {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 15px;
+
+    z-index: 10;
+
+    @include mixins.respond-to(desktopD) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__item-image {
+    margin-right: 15px;
+  }
+
+  &__item-img {
+    width: 61px;
+    height: 61px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--color-mine-shaft);
+  }
+
+  &__item-body {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--color-mine-shaft);
+
+    @include mixins.respond-to(mobileOnly) {
+      font-size: 16px;
+
+      padding-left: 5px;
+    }
+
+    @include mixins.respond-to(tablet) {
+      padding-left: 10px;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      padding-left: 15px;
+    }
+  }
+
+  &__slider-button {
+    position: absolute;
+    top: 43%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 5px;
+    background-color: var(--color-scooter);
+
+    transition: 0.2s;
+
+    @include mixins.respond-to(mobileOnly) {
+      display: none;
+    }
+
+    @include mixins.respond-to(tabletOnly) {
+      display: none;
+    }
+
+    @include mixins.respond-to(desktopS) {
+      display: flex;
+    }
+
+    &--prev {
+      transform: rotate(180deg);
+
+      @include mixins.respond-to(desktopS) {
+        left: -30px;
+      }
+    }
+
+    &--next {
+      @include mixins.respond-to(desktopS) {
+        right: -30px;
+      }
+    }
+  }
+}

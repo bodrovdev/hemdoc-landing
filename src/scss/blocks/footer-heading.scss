@@ -1,0 +1,147 @@
+@use "../mixins";
+
+.footer-heading {
+  background-color: var(--color-gallery);
+
+  padding: 20px 0 20px 0;
+
+  z-index: 5;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include mixins.respond-to(tablet) {
+      display: grid;
+      grid-template: 1fr / repeat(3, 1fr);
+      grid-column-gap: 30px;
+    }
+
+    @include mixins.respond-to(desktopS) {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+
+      padding: 21px 0 18px 0;
+    }
+  }
+
+  &__logo-block {
+    @include mixins.respond-to(mobileOnly) {
+      margin-bottom: 30px;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      margin-right: 44px;
+    }
+
+  }
+
+  &__desc {
+    display: flex;
+    flex-direction: column;
+
+    @include mixins.respond-to(mobileOnly) {
+      margin-bottom: 30px;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      margin-right: 185px;
+    }
+
+    &-top {
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 120%;
+      color: var(--color-scooter);
+
+      margin-bottom: 10px;
+    }
+
+    &-bottom {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+      color: var(--color-mine-shaft);
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    &-top {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 150%;
+      color: var(--color-black);
+
+      margin-bottom: 10px;
+
+      @include mixins.respond-to(mobileOnly) {
+        font-size: 15px;
+      }
+    }
+
+    @include mixins.respond-to(desktopS) {
+      margin-left: auto;
+    }
+
+    @include mixins.respond-to(desktopD) {
+      margin-left: 0;
+    }
+  }
+
+  &__file-loader {
+    display: flex;
+    align-items: center;
+
+    margin: 0 0 10px 0;
+
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+
+  &__file-icon {
+    transition: 0.1s;
+
+    margin-right: 20px;
+
+    @include mixins.respond-to(mobileOnly) {
+      margin-right: 10px;
+    }
+  }
+
+  &__file-caption {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--color-mine-shaft);
+
+    transition: 0.1s;
+  }
+
+  &__file-loader {
+
+    &:hover .footer-heading__file-caption {
+      color: var(--color-monza);
+
+      transition: 0.1s;
+    }
+
+    &:hover .footer-heading__file-icon {
+      fill: var(--color-monza);
+
+      transition: 0.1s;
+    }
+
+    &:focus-visible {
+      outline: solid var(--color-monza);
+      outline-offset: 5px;
+
+      transition: all 0.1s;
+    }
+  }
+}

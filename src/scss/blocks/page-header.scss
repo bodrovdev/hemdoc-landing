@@ -1,0 +1,39 @@
+@use "../mixins";
+
+.page-header {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  // background-image: -webkit-image-set(url('../img/image/design/X2-heading-background.jpg') 2x,
+  //     url('../img/image/design/heading-background.jpg') 1x);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: var(--color-white);
+  // border-bottom: 1px solid var(--color-mystic);
+
+  z-index: 6;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.8);
+
+    z-index: 1;
+  }
+
+  @include mixins.respond-to(tablet) {
+    margin-bottom: 30px;
+  }
+
+  @include mixins.respond-to(desktopS) {
+    margin-bottom: 60px;
+  }
+
+}

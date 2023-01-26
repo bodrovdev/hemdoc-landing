@@ -1,0 +1,79 @@
+@use "../mixins";
+
+.order-link {
+  height: 60px;
+  background: var(--color-monza);
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+
+  transition: 0.1s;
+
+  &:hover {
+    background-color: var(--color-milano-red);
+
+    transition: all 0.1s;
+  }
+
+  &:active {
+    background-color: var(--color-totem-pole);
+
+    transition: 0.1s;
+  }
+
+  &:focus-visible {
+    outline: solid var(--color-monza);
+    outline-offset: 5px;
+
+    transition: all 0.1s;
+  }
+
+  &__caption {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--color-white);
+  }
+}
+
+.whatsup-link {
+  height: 50px;
+  background: var(--color-scooter);
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  -webkit-tap-highlight-color: transparent;
+
+  transition: 0.1s;
+
+  &:hover {
+    background-color: var(--color-eastern-blue);
+
+    transition: all 0.1s;
+  }
+  
+  &:active {
+    background-color: var(--color-eastern-blue-2);
+
+    transition: all 0.1s;
+  }
+
+  &:focus-visible {
+    outline: solid var(--color-monza);
+    outline-offset: 5px;
+
+    transition: all 0.1s;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__caption {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: var(--color-white);
+  }
+}
